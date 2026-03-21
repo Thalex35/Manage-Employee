@@ -1,0 +1,94 @@
+export interface EmployeeItem {
+     id: number;
+     name: string;
+     position: string;
+     department: string;
+     status: string;
+}
+
+export const Data: EmployeeItem =  [
+  {
+    id: 1,
+    name: "Jean Pierre",
+    position: "Software Developer",
+    department: "IT",
+    status: "active",
+  },
+  {
+    id: 2,
+    name: "Marie Louise",
+    position: "HR Manager",
+    department: "Human Resources",
+    status: "active",
+  },
+  {
+    id: 3,
+    name: "David Joseph",
+    position: "Accountant",
+    department: "Finance",
+    status: "inactive",
+  },
+  {
+    id: 4,
+    name: "Sarah Michel",
+    position: "Marketing Specialist",
+    department: "Marketing",
+    status: "active",
+  },
+  {
+    id: 5,
+    name: "Paul Antoine",
+    position: "Network Engineer",
+    department: "IT",
+    status: "active",
+  },
+  {
+    id: 6,
+    name: "Nathalie Pierre-Louis",
+    position: "Administrative Assistant",
+    department: "Administration",
+    status: "inactive",
+  },
+  {
+    id: 7,
+    name: "Samuel Bernard",
+    position: "Sales Manager",
+    department: "Sales",
+    status: "active",
+  },
+  {
+    id: 8,
+    name: "Rose Charles",
+    position: "Customer Support Agent",
+    department: "Support",
+    status: "active",
+  },
+  {
+    id: 9,
+    name: "Daniel Toussaint",
+    position: "Data Analyst",
+    department: "IT",
+    status: "inactive",
+  },
+  {
+    id: 10,
+    name: "Esther Louis",
+    position: "Content Writer",
+    department: "Marketing",
+    status: "active",
+  },
+  {
+    id: 11,
+    name: "Kevin Marcelin",
+    position: "Security Officer",
+    department: "Security",
+    status: "active",
+  },
+  {
+    id: 12,
+    name: "Jessica Noel",
+    position: "Project Coordinator",
+    department: "Management",
+    status: "inactive",
+  },
+];
