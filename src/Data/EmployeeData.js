@@ -1,12 +1,4 @@
-export interface EmployeeItem {
-     id: number;
-     name: string;
-     position: string;
-     department: string;
-     status: string;
-}
-
-export const Data: EmployeeItem =  [
+export const Data = [
   {
     id: 1,
     name: "Jean Pierre",

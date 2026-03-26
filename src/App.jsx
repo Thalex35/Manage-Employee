@@ -1,7 +1,13 @@
 import "./App.css";
+import { Data } from "./Data/EmployeeData";
+import EmployeeList from "./components/EmployeeList";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <EmployeeList employees={Data} />
+    </>
+  );
 }
 
 export default App;
