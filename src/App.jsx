@@ -1,14 +1,13 @@
 import "./App.css";
-import EmployeeForm from "./components/EmployeeForm";
+import { Data } from "./Data/EmployeeData";
+import EmployeeList from "./components/EmployeeList";
 
 function App() {
-
-  return(
-    <div>
-      <h1>Form</h1>
-      <EmployeeForm />
-    </div>
-  )
+  return <>
+  <EmployeeList employees={Data} />
+  <EmployeeForm />
+  </>;
 }
 
 export default App;
+
