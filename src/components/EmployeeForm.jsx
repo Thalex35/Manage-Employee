@@ -18,6 +18,12 @@ export default function EmployeeForm({ addEmployee }) {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+    if (!form_data.name || !form_data.position || !form_data.department) {
+    alert("Champs vide!");
+    return;
+  }
+
+
     const newEmployee = {
       ...form_data,
       id: Date.now(),
@@ -34,6 +40,8 @@ export default function EmployeeForm({ addEmployee }) {
   };
 
   return (
+    <>
+    <h2>Employee Form</h2>
     <form onSubmit={handleSubmit}>
       <input
         type="text"
@@ -61,5 +69,6 @@ export default function EmployeeForm({ addEmployee }) {
 
       <button type="submit">Add</button>
     </form>
+    </>
   );
 }
