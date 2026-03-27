@@ -3,7 +3,7 @@
   flex-direction: row-reverse;
   width: 100%;
   gap: 30px;
-  margin: 20px;
+  margin: 0;
 }
 
 .form {
@@ -15,5 +15,14 @@
 
 .sidebar {
   border: 1px solid #1e2a38;
-  width: 200px;
+  width: 90%;
+  padding: 30px;
+}
+
+.sidebar p {
+  color: #4a6070;
+}
+
+.emp {
+  width: 80%;
 }
