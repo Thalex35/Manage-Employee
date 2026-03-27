@@ -1,17 +1,17 @@
 import { useState } from "react";
+import "./employeeForm.css";
 
 export default function EmployeeForm({ addEmployee }) {
-
   const [form_data, setFormData] = useState({
     name: "",
     position: "",
-    department: ""
+    department: "",
   });
 
   const handleChange = (event) => {
     setFormData({
       ...form_data,
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     });
   };
 
@@ -21,7 +21,7 @@ export default function EmployeeForm({ addEmployee }) {
     const newEmployee = {
       ...form_data,
       id: Date.now(),
-      status: "Actif"
+      status: "Actif",
     };
 
     addEmployee(newEmployee);
@@ -29,37 +29,50 @@ export default function EmployeeForm({ addEmployee }) {
     setFormData({
       name: "",
       position: "",
-      department: ""
+      department: "",
     });
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        name="name"
-        placeholder="Votre nom"
-        value={form_data.name}
-        onChange={handleChange}
-      />
-
-      <input
-        type="text"
-        name="position"
-        placeholder="Poste"
-        value={form_data.position}
-        onChange={handleChange}
-      />
-
-      <input
-        type="text"
-        name="department"
-        placeholder="Département"
-        value={form_data.department}
-        onChange={handleChange}
-      />
-
-      <button type="submit">Add</button>
+      <div className="inputs">
+        <div className="InputLabel">
+          <label htmlFor="nom">NOM COMPLET</label>
+          <input
+            id="nom"
+            type="text"
+            name="name"
+            placeholder="John Doe..."
+            value={form_data.name}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="InputLabel">
+          <label htmlFor="poste">POSITION</label>
+          <input
+            id="poste"
+            type="text"
+            name="position"
+            placeholder="HR Manager..."
+            value={form_data.position}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="InputLabel">
+          <label htmlFor="department">DEPARTMENT</label>
+          <input
+            id="department"
+            type="text"
+            name="department"
+            placeholder="Human Ressources"
+            value={form_data.department}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <button type="submit">+ Ajouter l'employé</button>
+        </div>
+      </div>
     </form>
   );
 }
