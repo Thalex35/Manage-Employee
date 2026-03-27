@@ -1,6 +1,36 @@
 .card {
-  border: 1px solid gray;
+  border: 1px solid #1e2a38;
+  border-top: 4px solid #2ec4a0;
   border-radius: 10px;
   padding: 20px;
-  width: 200px;
+  width: 300px;
+  background-color: #111820;
+}
+
+.icon {
+  border: 1px solid #0e2a24;
+  background-color: #0e2a24;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.destas {
+  display: flex;
+  gap: 20px;
+}
+
+.desta {
+  border: 1px solid #0e2a24;
+  border-radius: 10px;
+  background-color: #0e2a24;
+  padding: 10px;
+}
+
+.name {
+  font-size: 1.3em;
+  color: #e8f4f0;
+}
+
+.posi {
+  color: #4a6070;
 }
