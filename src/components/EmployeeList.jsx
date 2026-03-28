@@ -3,7 +3,7 @@ import "./employeeList.css";
 
 export default function EmployeeList({ employees }) {
   return (
-    <div>
+    <div className="team-section">
       <h1>Équipe de travail</h1>
       <div className="Emp-card">
         {employees.map((emp) => (
